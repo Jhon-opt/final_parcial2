@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Opciones para el tipo de mascota -->
+    <string-array name="pet_types">
+        <item>dog</item>
+        <item>cat</item>
+    </string-array>
+
+    <!-- Opciones para la raza de perro -->
+    <string-array name="dog_breeds">
+        <item>bulldog</item>
+        <item>pitbull</item>
+    </string-array>
+
+    <!-- Opciones para la raza de gato -->
+    <string-array name="cat_breeds">
+        <!-- Agrega aquí las opciones para la raza de gato si las hay -->
+    </string-array>
+</resources>

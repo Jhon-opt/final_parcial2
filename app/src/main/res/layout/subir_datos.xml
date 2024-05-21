@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storage pet"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo de texto para el nombre -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:hint="Name" />
+
+    <!-- Lista desplegable para el tipo de mascota -->
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:entries="@array/pet_types"
+        android:hint="Type" />
+
+    <!-- Campo de texto para la edad -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:hint="Age" />
+
+    <!-- Lista desplegable para la raza -->
+    <Spinner
+        android:id="@+id/spinnerBreed"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:entries="@array/dog_breeds"
+        android:hint="Breed" />
+
+    <!-- Botón para subir foto -->
+    <Button
+        android:id="@+id/buttonPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Photo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fot" />
+
+
+    <!-- Espacio vacío para distribuir -->
+    <Space
+        android:layout_width="770dp"
+        android:layout_height="44dp"
+        android:layout_weight="1" />
+
+    <!-- Botones Guardar y Cancelar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:onClick="menuprincipal"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Txt_mostrar_raza"
+            android:layout_width="174dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="40dp"
+            android:text="Raza de la mascota"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Txt_mostrar_tipo" />
+
+        <TextView
+            android:id="@+id/Txt_mostrar_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Nombre de la mascota"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="344dp"
+            android:layout_height="224dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintTop_toBottomOf="@+id/Txt_mostrar_nombre"
+            tools:layout_editor_absoluteX="33dp" />
+
+        <TextView
+            android:id="@+id/Txt_mostrar_tipo"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="32dp"
+            android:text="Tipo de mascota"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Txt_mostrar_edad" />
+
+        <TextView
+            android:id="@+id/Txt_mostrar_edad"
+            android:layout_width="170dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="60dp"
+            android:text="Edad de la mascota"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/Btn_Volver_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#009688"
+            android:text="Volver "
+            android:onClick="menuprincipal1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Txt_mostrar_raza" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
